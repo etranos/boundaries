@@ -265,5 +265,5 @@ tmap_save(fg.wm.migration, path.map.wm.migration)
 wm.migration.for.geojson <- poly[!is.na(poly@data$community),]
 
 path.out.wm.migration.geojson <- paste0(path, "/outputs/wm_migration_fg.geojson")
-writeOGR(wm.migration.for.geojson, path.out.wm.migration.geojson, layer="meuse", driver="GeoJSON")
+writeOGR(wm.migration.for.geojson, path.out.wm.migration.geojson, layer="wm.migration.for.geojson", driver="GeoJSON")
 ```
